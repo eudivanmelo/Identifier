@@ -1,5 +1,7 @@
 # Validador de Identificadores - Teste de Software
 
+![Testes](https://github.com/eudivanmelo/Identifier/actions/workflows/test.yml/badge.svg)
+
 ## Descrição do Problema
 
 O programa deve determinar se um identificador é válido ou não.
@@ -135,3 +137,27 @@ python identifier.py "A12345"
 # Teste inválido
 python identifier.py "123456"
 ```
+
+---
+
+## Integração Contínua (CI/CD)
+
+Este projeto utiliza **GitHub Actions** para executar os testes automaticamente.
+
+### Quando os testes são executados:
+- A cada **push** na branch `main`
+- A cada **pull request** para a branch `main`
+
+### Configuração do Workflow
+
+O arquivo `.github/workflows/test.yml` contém a configuração do CI/CD:
+
+### Verificar Status dos Testes
+
+Após fazer push para o GitHub, você pode:
+
+1. **Ver o badge de status** no topo deste README
+2. **Acessar a aba "Actions"** no repositório do GitHub
+3. **Visualizar logs detalhados** de cada execução dos testes
+
+O workflow testa o código em **múltiplas versões do Python** (3.8, 3.9, 3.10, 3.11) para garantir compatibilidade.

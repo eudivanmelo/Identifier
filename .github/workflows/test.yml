@@ -35,4 +35,4 @@ jobs:
     - name: Relatório de cobertura
       if: success()
       run: |
-        echo "✅ Todos os testes passaram com sucesso!"
+        echo "Todos os testes passaram com sucesso!"
